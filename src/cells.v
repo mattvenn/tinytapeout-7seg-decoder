@@ -8,14 +8,21 @@ module and_cell (
 
     assign out = a & b;
 endmodule
-
-module or_cell (
+module and_cell (
     input wire a,
     input wire b,
     output wire out
     );
 
-    assign out = a | b;
+    assign out = a & b;
+endmodule
+
+module buffer_cell (
+    input wire a,
+    output wire out
+    );
+
+    assign out = a;
 endmodule
 
 module xor_cell (
