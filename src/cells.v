@@ -8,14 +8,6 @@ module and_cell (
 
     assign out = a & b;
 endmodule
-module and_cell (
-    input wire a,
-    input wire b,
-    output wire out
-    );
-
-    assign out = a & b;
-endmodule
 
 module buffer_cell (
     input wire a,
