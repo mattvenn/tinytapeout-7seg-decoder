@@ -1,5 +1,12 @@
 `define default_netname none
 
+module buffer_cell (
+    input wire a,
+    output wire out
+    );
+    assign out = a;
+endmodule
+
 module and_cell (
     input wire a,
     input wire b,
@@ -9,12 +16,13 @@ module and_cell (
     assign out = a & b;
 endmodule
 
-module buffer_cell (
+module or_cell (
     input wire a,
+    input wire b,
     output wire out
     );
 
-    assign out = a;
+    assign out = a | b;
 endmodule
 
 module xor_cell (
